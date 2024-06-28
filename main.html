@@ -8,26 +8,35 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-        .modal-header {
-			background-color: green;
-      display: block;
-      justify-content: center;
+    #openModal {
+      background-color: lightgray;
+      color: black;
+      border: none;
+    }
+
+    .modal-header {
+      padding: 10px;
+      background-color: green;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
     }
 
     .modal-title {
       text-align: left;
-      width: 100%;
-		height:20px;
+      margin: 0;
+      height: 20px;
     }
+
     .modal-body {
       position: relative;
+      height: 50px;
     }
 
     .close-modal {
       position: absolute;
-      top: 10;
-      right: 0;
+      top: 10px;
+      right: 10px;
     }
   </style>
 </head>
@@ -44,10 +53,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Modal Header</h1>
+          <button type="button" class="btn-close close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           Modal body center
-          <button type="button" class="btn-close close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
       </div>
     </div>
