@@ -1,70 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modal Example</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    #openModal {
-      background-color: lightgray;
-      color: black;
-      border: none;
-    }
-
-    .modal-header {
-      padding: 10px;
-      background-color: green;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .modal-title {
-      text-align: left;
-      margin: 0;
-      height: 20px;
-    }
-
-    .modal-body {
-      position: relative;
-      height: 50px;
-    }
-
-    .close-modal {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" id="openModal" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Open Modal
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+   <button id="openModal">Open Modal</button>
+    
+    <div id="myModal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal Header</h1>
-         </div>
+          <h2>Modal Header</h2>
+          <button class="close-modal">&times;</button>
+        </div>
         <div class="modal-body">
-          Modal body center
-			 <button type="button" class="btn-close close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
-        
+          <p>Modal Body Content</p>
         </div>
       </div>
     </div>
-  </div>
-
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+    <script>
+      
+    </script>
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
